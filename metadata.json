@@ -1,0 +1,6 @@
+{
+  "name": "ZARVAND • From Matter to Value",
+  "description": "An immersive WebGL digital luxury jewelry experience narrating the metamorphosis from raw matter to enduring cultural and aesthetic value.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

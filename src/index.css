@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --color-luxury-black: #080808;
+  --color-luxury-ivory: #F4F0E8;
+  --color-luxury-gold: #C8A45A;
+  --color-luxury-champagne: #E6D3A3;
+  --color-luxury-amber: #9B4D24;
+  --color-luxury-brown: #4A3427;
+  --color-luxury-graphite: #1A1917;
+
+  --font-persian: 'Vazirmatn', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-persian-heading: 'Markazi Text', 'Amiri', 'Vazirmatn', serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-display: 'Cinzel', serif;
+}
+
+:root {
+  --bg-deep: #080808;
+  --gold-primary: #C8A45A;
+  --gold-light: #E6D3A3;
+  --gold-amber: #9B4D24;
+  --ivory-warm: #F4F0E8;
+  --graphite: #1A1917;
+  --font-fa: 'Vazirmatn', sans-serif;
+  --font-heading-fa: 'Markazi Text', 'Amiri', 'Vazirmatn', serif;
+  --font-display: 'Cinzel', serif;
+  --font-editorial: 'Cormorant Garamond', serif;
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a251e;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C8A45A;
+}
+
+/* Custom luxury subtle glows and borders */
+.border-gold-subtle {
+  border-color: rgba(200, 164, 90, 0.22);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F4F0E8 0%, #C8A45A 50%, #9B4D24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.font-fa {
+  font-family: var(--font-fa);
+}
+
+.font-heading-fa {
+  font-family: var(--font-heading-fa);
+  letter-spacing: 0 !important;
+}
+
+.font-heading {
+  font-family: var(--font-heading-fa);
+  letter-spacing: 0 !important;
+}
+
+[dir="ltr"] .font-heading {
+  font-family: var(--font-display);
+  letter-spacing: 0.05em;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] .font-display {
+  font-family: var(--font-heading-fa);
+  letter-spacing: 0 !important;
+}
+
+.font-editorial {
+  font-family: var(--font-editorial);
+}
+
+.font-quote-fa {
+  font-family: 'Markazi Text', 'Amiri', 'Vazirmatn', serif !important;
+  font-style: normal !important;
+  letter-spacing: 0 !important;
+  text-shadow: 0 1px 12px rgba(200, 164, 90, 0.12);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Lenis recommended css */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
